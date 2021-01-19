@@ -2,18 +2,18 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: dev
-  namespace: WassimBenzarti
+  namespace: wassimbenzarti
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: "semver:*"
 spec:
   releaseName: dev
   chart:
-    git: git@github.com:WassimBenzarti/flux-getting-started-1
+    git: git@github.com:wassimbenzarti/flux-getting-started-1
     path: chart
     ref: master
   values:
     replicaCount: 1
     image:
-      repository: okteto/hello-world
+      repository: registry.cloud.okteto.net/wassimbenzarti/hello-world
       tag: golang
