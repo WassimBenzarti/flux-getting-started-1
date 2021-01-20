@@ -9,7 +9,7 @@ metadata:
 spec:
   releaseName: dev
   chart:
-    git: git@github.com:wassimbenzarti/flux-getting-started-1
+    git: git@github.com:wassimbenzarti/flux-getting-started
     path: chart
     ref: master
   values:
